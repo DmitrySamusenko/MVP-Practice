@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// Output Protocol
 protocol MainViewProtocol: AnyObject {
     func setGreeting(greeting: String)
 }
@@ -16,10 +16,9 @@ protocol MainViewPresenterProtocol: AnyObject {
     func showGreeting()
 }
 
-class MainPresenter: MainViewPresenterProtocol {
-    
-    let view: MainViewProtocol
-    let person: Person
+class MainViewPresenter: MainViewPresenterProtocol {
+    var view: MainViewProtocol
+    var person: Person
     
     required init(view: MainViewProtocol, person: Person) {
         self.view = view
@@ -27,8 +26,7 @@ class MainPresenter: MainViewPresenterProtocol {
     }
     
     func showGreeting() {
-        let greeting = "Hello buddy!"
+        let greeting = "Hello World! This is \(person.firstName) \(person.secondName)!"
         self.view.setGreeting(greeting: greeting)
     }
 }
-

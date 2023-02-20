@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771803F229A3D7FF00AEDF21 /* MVP_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771803F129A3D7FF00AEDF21 /* MVP_PracticeTests.swift */; };
+		771803FA29A3D86200AEDF21 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771803F929A3D86200AEDF21 /* MainPresenterTest.swift */; };
 		7748F49729A1152D00D49B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748F49629A1152D00D49B2C /* AppDelegate.swift */; };
 		7748F49929A1152D00D49B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748F49829A1152D00D49B2C /* SceneDelegate.swift */; };
 		7748F49B29A1152D00D49B2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748F49A29A1152D00D49B2C /* MainViewController.swift */; };
@@ -16,10 +18,23 @@
 		7748F4B229A11F8E00D49B2C /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748F4B129A11F8E00D49B2C /* MainPresenter.swift */; };
 		7748F4B629A13AF900D49B2C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748F4B529A13AF900D49B2C /* Person.swift */; };
 		7748F4BB29A147CD00D49B2C /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7748F4BA29A147CD00D49B2C /* MainView.xib */; };
-		7748F4BD29A14A7B00D49B2C /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748F4BC29A14A7B00D49B2C /* ModuleBuilder.swift */; };
+		774C810529A24D510091CD36 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C810429A24D510091CD36 /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		771803F329A3D7FF00AEDF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7748F48B29A1152D00D49B2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7748F49229A1152D00D49B2C;
+			remoteInfo = "MVP Practice";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		771803EF29A3D7FF00AEDF21 /* MVP PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVP PracticeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		771803F129A3D7FF00AEDF21 /* MVP_PracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_PracticeTests.swift; sourceTree = "<group>"; };
+		771803F929A3D86200AEDF21 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		7748F49329A1152D00D49B2C /* MVP Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7748F49629A1152D00D49B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7748F49829A1152D00D49B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,10 +46,17 @@
 		7748F4B129A11F8E00D49B2C /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		7748F4B529A13AF900D49B2C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7748F4BA29A147CD00D49B2C /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		7748F4BC29A14A7B00D49B2C /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		774C810429A24D510091CD36 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		771803EC29A3D7FF00AEDF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7748F49029A1152D00D49B2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +67,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771803F029A3D7FF00AEDF21 /* MVP PracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				771803F829A3D84400AEDF21 /* TestMainModule */,
+				771803F129A3D7FF00AEDF21 /* MVP_PracticeTests.swift */,
+			);
+			path = "MVP PracticeTests";
+			sourceTree = "<group>";
+		};
+		771803F829A3D84400AEDF21 /* TestMainModule */ = {
+			isa = PBXGroup;
+			children = (
+				771803F929A3D86200AEDF21 /* MainPresenterTest.swift */,
+			);
+			path = TestMainModule;
+			sourceTree = "<group>";
+		};
 		7748F48A29A1152D00D49B2C = {
 			isa = PBXGroup;
 			children = (
 				7748F49529A1152D00D49B2C /* MVP Practice */,
+				771803F029A3D7FF00AEDF21 /* MVP PracticeTests */,
 				7748F49429A1152D00D49B2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7748F49329A1152D00D49B2C /* MVP Practice.app */,
+				771803EF29A3D7FF00AEDF21 /* MVP PracticeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,10 +144,10 @@
 		7748F4B929A1477F00D49B2C /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
+				774C810429A24D510091CD36 /* ModuleBuilder.swift */,
 				7748F4AE29A11D0600D49B2C /* Views */,
 				7748F4AB29A1164700D49B2C /* Presenters */,
 				7748F4AA29A1164100D49B2C /* Models */,
-				7748F4BC29A14A7B00D49B2C /* ModuleBuilder.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -114,6 +155,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		771803EE29A3D7FF00AEDF21 /* MVP PracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771803F529A3D7FF00AEDF21 /* Build configuration list for PBXNativeTarget "MVP PracticeTests" */;
+			buildPhases = (
+				771803EB29A3D7FF00AEDF21 /* Sources */,
+				771803EC29A3D7FF00AEDF21 /* Frameworks */,
+				771803ED29A3D7FF00AEDF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				771803F429A3D7FF00AEDF21 /* PBXTargetDependency */,
+			);
+			name = "MVP PracticeTests";
+			productName = "MVP PracticeTests";
+			productReference = 771803EF29A3D7FF00AEDF21 /* MVP PracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7748F49229A1152D00D49B2C /* MVP Practice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7748F4A729A1153000D49B2C /* Build configuration list for PBXNativeTarget "MVP Practice" */;
@@ -141,6 +200,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					771803EE29A3D7FF00AEDF21 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 7748F49229A1152D00D49B2C;
+					};
 					7748F49229A1152D00D49B2C = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -160,11 +223,19 @@
 			projectRoot = "";
 			targets = (
 				7748F49229A1152D00D49B2C /* MVP Practice */,
+				771803EE29A3D7FF00AEDF21 /* MVP PracticeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		771803ED29A3D7FF00AEDF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7748F49129A1152D00D49B2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +250,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		771803EB29A3D7FF00AEDF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771803F229A3D7FF00AEDF21 /* MVP_PracticeTests.swift in Sources */,
+				771803FA29A3D86200AEDF21 /* MainPresenterTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7748F48F29A1152D00D49B2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,11 +268,19 @@
 				7748F49B29A1152D00D49B2C /* MainViewController.swift in Sources */,
 				7748F49729A1152D00D49B2C /* AppDelegate.swift in Sources */,
 				7748F49929A1152D00D49B2C /* SceneDelegate.swift in Sources */,
-				7748F4BD29A14A7B00D49B2C /* ModuleBuilder.swift in Sources */,
+				774C810529A24D510091CD36 /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		771803F429A3D7FF00AEDF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7748F49229A1152D00D49B2C /* MVP Practice */;
+			targetProxy = 771803F329A3D7FF00AEDF21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7748F49C29A1152D00D49B2C /* Main.storyboard */ = {
@@ -214,6 +302,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		771803F629A3D7FF00AEDF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X92UUHFVDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dmitrysamusenko.MVP-PracticeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVP Practice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVP Practice";
+			};
+			name = Debug;
+		};
+		771803F729A3D7FF00AEDF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X92UUHFVDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dmitrysamusenko.MVP-PracticeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVP Practice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVP Practice";
+			};
+			name = Release;
+		};
 		7748F4A529A1153000D49B2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,6 +511,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		771803F529A3D7FF00AEDF21 /* Build configuration list for PBXNativeTarget "MVP PracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771803F629A3D7FF00AEDF21 /* Debug */,
+				771803F729A3D7FF00AEDF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7748F48E29A1152D00D49B2C /* Build configuration list for PBXProject "MVP Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

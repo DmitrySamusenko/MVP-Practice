@@ -9,23 +9,28 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet var greetingLabel: UILabel!
-    
-    var presenter: MainViewPresenterProtocol! // Инъекция зависимости снаружи
+   // Make presenter without strong link to class
+    var presenter: MainViewPresenterProtocol!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
+}
     
     @IBAction func didTapButtonAction(_ sender: Any) {
-        self.presenter.showGreeting()
+        presenter.showGreeting()
     }
 }
 
 extension MainViewController: MainViewProtocol {
     func setGreeting(greeting: String) {
-        self.greetingLabel.text = greeting
+        DispatchQueue.main.async {
+            self.greetingLabel.text = greeting
+        }
     }
-    
-    
 }
+
+
+
+
