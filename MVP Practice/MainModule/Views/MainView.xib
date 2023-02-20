@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MVP_Practice" customModuleProvider="target">
             <connections>
-                <outlet property="greetingLabel" destination="Os3-Q1-KMV" id="lPz-Ov-6Fe"/>
+                <outlet property="tableView" destination="Hui-XM-Ny2" id="8nl-RW-jzD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Pz9-bb-Exv"/>
             </connections>
         </placeholder>
@@ -19,33 +19,14 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-dt-C2w">
-                    <rect key="frame" x="16" y="310" width="358" height="74.666666666666686"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os3-Q1-KMV">
-                            <rect key="frame" x="158.33333333333334" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xva-hh-J6D">
-                            <rect key="frame" x="134.33333333333334" y="40.333333333333314" width="89.666666666666657" height="34.333333333333343"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="Greeting"/>
-                            <connections>
-                                <action selector="didTapButtonAction:" destination="-1" eventType="touchUpInside" id="EJ1-1v-7WA"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hui-XM-Ny2">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="Vnt-dt-C2w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="AZJ-Sd-a1i"/>
-                <constraint firstItem="Vnt-dt-C2w" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="263" id="WkD-Ed-Vdh"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vnt-dt-C2w" secondAttribute="trailing" constant="16" id="pFt-hZ-h2w"/>
-            </constraints>
             <point key="canvasLocation" x="84.615384615384613" y="-11.374407582938389"/>
         </view>
     </objects>
